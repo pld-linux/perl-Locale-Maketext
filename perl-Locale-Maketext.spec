@@ -68,4 +68,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README
 %dir %{perl_vendorlib}/Locale/Maketext
 %{perl_vendorlib}/Locale/Maketext.pm
+%{perl_vendorlib}/Locale/Maketext/Guts*.pm
 %{_mandir}/man3/*
