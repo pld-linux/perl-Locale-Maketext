@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Locale
-%define	pnam	Maketext
+%define		pdir	Locale
+%define		pnam	Maketext
 Summary:	Locale::Maketext - framework for localization
 Summary(pl):	Locale::Maketext - szkielet do lokalizacji programów
 Name:		perl-Locale-Maketext
