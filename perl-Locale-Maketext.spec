@@ -16,7 +16,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	18a2c23346e1bc9406673cb336ca770e
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6
-%if %{?_without_test:0}%{!?_without_test:1}
+%if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-I18N-LangTags
 %endif
 BuildArch:	noarch
