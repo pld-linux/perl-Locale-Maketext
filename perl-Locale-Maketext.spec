@@ -17,7 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6
 %if %{?_without_tests:0}%{!?_without_tests:1}
-BuildRequires:	perl-I18N-LangTags
+BuildRequires:	perl-I18N-LangTags >= 0.30
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
