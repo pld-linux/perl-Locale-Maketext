@@ -26,7 +26,7 @@ Locale-Maketext udostêpnia funkcje pomocne przy lokalizacji programów.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
