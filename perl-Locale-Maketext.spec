@@ -2,8 +2,8 @@
 Summary:	Locale-Maketext perl module
 Summary(pl):	Modu³ perla Locale-Maketext
 Name:		perl-Locale-Maketext
-Version:	0.18
-Release:	3
+Version:	1.01
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
