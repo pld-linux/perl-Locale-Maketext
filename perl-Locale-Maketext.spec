@@ -10,7 +10,8 @@ Summary(pl):	Locale::Maketext - szkielet do lokalizacji programów
 Name:		perl-Locale-Maketext
 Version:	1.09
 Release:	1
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d21c2d4ffe2d19c1936848187ea6ca37
