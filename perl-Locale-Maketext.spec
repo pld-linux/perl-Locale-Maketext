@@ -8,8 +8,8 @@
 Summary:	Locale::Maketext - framework for localization
 Summary(pl):	Locale::Maketext - szkielet do lokalizacji programów
 Name:		perl-Locale-Maketext
-Version:	1.03
-Release:	6
+Version:	1.04
+Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,25 +22,27 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-It is a common feature of applications (whether run directly, or via the
-Web) for them to be "localized" -- i.e., for them to a present an English
-interface to an English- speaker, a German interface to a German-speaker,
-and so on for all languages it's programmed with.
+It is a common feature of applications (whether run directly, or via
+the Web) for them to be "localized" - i.e., for them to a present an
+English interface to an English- speaker, a German interface to a
+German-speaker, and so on for all languages it's programmed with.
 
 Locale::Maketext is a framework for software localization; it provides
 you with the tools for organizing and accessing the bits of text and
-text-processing code that you need for producing localized applications.
+text-processing code that you need for producing localized
+applications.
 
 %description -l pl
-Czêsto spotykan± cech± programów (uruchamianych bezpo¶rednio lub przez WWW)
-jest ich lokalizacja, czyli umiejêtno¶æ prezentowania angielskiego interfejsu
-u¿ytkownikowi anglojêzycznemu, niemiekiego -- niemieckojêzycznemu i tak dalej
-dla wszystkich jêzyków, dla których istniej± t³umaczenia.
+Czêsto spotykan± cech± programów (uruchamianych bezpo¶rednio lub przez
+WWW) jest ich lokalizacja, czyli umiejêtno¶æ prezentowania
+angielskiego interfejsu u¿ytkownikowi anglojêzycznemu, niemiekiego -
+niemieckojêzycznemu i tak dalej dla wszystkich jêzyków, dla których
+istniej± t³umaczenia.
 
-Locale::Maketext jest szkieletem do tworzenia zlokalizowanych programów;
-udostêpnia Ci narzêdzia do organizowania i odwo³ywania siê do fragmentów
-tekstu, oraz potrzebnego Ci przy tworzeniu zlokalizowanego oprogramowania
-kodu przetwarzaj±cego tekst.
+Locale::Maketext jest szkieletem do tworzenia zlokalizowanych
+programów; udostêpnia narzêdzia do organizowania i odwo³ywania siê do
+fragmentów tekstu oraz kodu przetwarzaj±cego tekst, potrzebnego przy
+tworzeniu zlokalizowanego oprogramowania.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -48,6 +50,7 @@ kodu przetwarzaj±cego tekst.
 %build
 %{__perl} Makefile.PL
 %{__make}
+
 %{!?_without_tests:%{__make} test}
 
 %install
