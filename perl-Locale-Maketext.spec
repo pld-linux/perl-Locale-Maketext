@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Locale
 %define	pnam	Maketext
-%include	/usr/lib/rpm/macros.perl
 Summary:	Locale-Maketext perl module
 Summary(pl):	Modu³ perla Locale-Maketext
 Name:		perl-Locale-Maketext
 Version:	1.03
-Release:	3
-
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ Locale-Maketext - framework for software localization.
 Locale-Maketext udostêpnia funkcje pomocne przy lokalizacji programów.
 
 %prep
-%setup -q -n Locale-Maketext-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
