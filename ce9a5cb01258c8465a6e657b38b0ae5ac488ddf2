@@ -1,0 +1,2 @@
+- added %%{perl_sitelib}/%{pdir}/%{pnam} dir for submodules in other packages
+- cleaning, release 6
