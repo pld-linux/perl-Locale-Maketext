@@ -37,7 +37,7 @@ applications.
 %description -l pl
 Czêsto spotykan± cech± programów (uruchamianych bezpo¶rednio lub przez
 WWW) jest ich lokalizacja, czyli umiejêtno¶æ prezentowania
-angielskiego interfejsu u¿ytkownikowi anglojêzycznemu, niemiekiego -
+angielskiego interfejsu u¿ytkownikowi anglojêzycznemu, niemieckiego -
 niemieckojêzycznemu i tak dalej dla wszystkich jêzyków, dla których
 istniej± t³umaczenia.
 
