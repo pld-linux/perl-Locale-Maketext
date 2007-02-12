@@ -6,7 +6,7 @@
 %define		pdir	Locale
 %define		pnam	Maketext
 Summary:	Locale::Maketext - framework for localization
-Summary(pl):	Locale::Maketext - szkielet do lokalizacji programów
+Summary(pl.UTF-8):   Locale::Maketext - szkielet do lokalizacji programÃ³w
 Name:		perl-Locale-Maketext
 Version:	1.09
 Release:	1
@@ -34,17 +34,17 @@ you with the tools for organizing and accessing the bits of text and
 text-processing code that you need for producing localized
 applications.
 
-%description -l pl
-Czêsto spotykan± cech± programów (uruchamianych bezpo¶rednio lub przez
-WWW) jest ich lokalizacja, czyli umiejêtno¶æ prezentowania
-angielskiego interfejsu u¿ytkownikowi anglojêzycznemu, niemieckiego -
-niemieckojêzycznemu i tak dalej dla wszystkich jêzyków, dla których
-istniej± t³umaczenia.
+%description -l pl.UTF-8
+CzÄ™sto spotykanÄ… cechÄ… programÃ³w (uruchamianych bezpoÅ›rednio lub przez
+WWW) jest ich lokalizacja, czyli umiejÄ™tnoÅ›Ä‡ prezentowania
+angielskiego interfejsu uÅ¼ytkownikowi anglojÄ™zycznemu, niemieckiego -
+niemieckojÄ™zycznemu i tak dalej dla wszystkich jÄ™zykÃ³w, dla ktÃ³rych
+istniejÄ… tÅ‚umaczenia.
 
 Locale::Maketext jest szkieletem do tworzenia zlokalizowanych
-programów; udostêpnia Ci narzêdzia do organizowania i odwo³ywania siê
-do fragmentów tekstu, oraz potrzebnego Ci przy tworzeniu
-zlokalizowanego oprogramowania kodu przetwarzaj±cego tekst.
+programÃ³w; udostÄ™pnia Ci narzÄ™dzia do organizowania i odwoÅ‚ywania siÄ™
+do fragmentÃ³w tekstu, oraz potrzebnego Ci przy tworzeniu
+zlokalizowanego oprogramowania kodu przetwarzajÄ…cego tekst.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
