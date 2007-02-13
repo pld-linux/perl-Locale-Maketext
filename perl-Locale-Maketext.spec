@@ -6,7 +6,7 @@
 %define		pdir	Locale
 %define		pnam	Maketext
 Summary:	Locale::Maketext - framework for localization
-Summary(pl.UTF-8):   Locale::Maketext - szkielet do lokalizacji programów
+Summary(pl.UTF-8):	Locale::Maketext - szkielet do lokalizacji programów
 Name:		perl-Locale-Maketext
 Version:	1.09
 Release:	1
