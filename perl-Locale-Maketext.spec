@@ -13,8 +13,9 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Locale/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2ce7df98688f33c15c8b15fb25190dd7
+URL:		http://search.cpan.org/dist/Locale-Maketext/
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
@@ -68,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%dir %{perl_vendorlib}/%{pdir}/%{pnam}
-%{perl_vendorlib}/%{pdir}/%{pnam}.pm
-%{perl_vendorlib}/%{pdir}/%{pnam}/Guts*
+%{perl_vendorlib}/Locale/Maketext.pm
+%dir %{perl_vendorlib}/Locale/Maketext
+%{perl_vendorlib}/Locale/Maketext/Guts*
 %{_mandir}/man3/*
