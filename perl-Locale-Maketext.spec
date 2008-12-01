@@ -8,13 +8,13 @@
 Summary:	Locale::Maketext - framework for localization
 Summary(pl.UTF-8):	Locale::Maketext - szkielet do lokalizacji programów
 Name:		perl-Locale-Maketext
-Version:	1.12
+Version:	1.13
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Locale/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	2ce7df98688f33c15c8b15fb25190dd7
+# Source0-md5:	98f9c577e65f40cc2b328d8570e2ab27
 URL:		http://search.cpan.org/dist/Locale-Maketext/
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
