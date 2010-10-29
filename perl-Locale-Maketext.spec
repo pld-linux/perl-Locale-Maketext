@@ -1,20 +1,20 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Locale
 %define		pnam	Maketext
+%include	/usr/lib/rpm/macros.perl
 Summary:	Locale::Maketext - framework for localization
 Summary(pl.UTF-8):	Locale::Maketext - szkielet do lokalizacji programów
 Name:		perl-Locale-Maketext
-Version:	1.13
-Release:	2
+Version:	1.17
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Locale/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	98f9c577e65f40cc2b328d8570e2ab27
+# Source0-md5:	0e5b8a5973a75a329b8cdb5e60f6f588
 URL:		http://search.cpan.org/dist/Locale-Maketext/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -60,9 +60,12 @@ zlokalizowanego oprogramowania kodu przetwarzającego tekst.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+rm $RPM_BUILD_ROOT%{perl_vendorarch}/auto/Locale-Maketext/.packlist
+rm $RPM_BUILD_ROOT%{perl_vendorlib}/Locale/Maketext.pod
+rm $RPM_BUILD_ROOT%{perl_vendorlib}/Locale/Maketext/*.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -71,5 +74,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README
 %{perl_vendorlib}/Locale/Maketext.pm
-%{perl_vendorlib}/Locale/Maketext/Guts*
-%{_mandir}/man3/*
+%{perl_vendorlib}/Locale/Maketext
+%{_mandir}/man3/Locale::Maketext*.3pm*
