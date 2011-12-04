@@ -20,7 +20,7 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-dirs >= 2.1-15
 %if %{with tests}
-BuildRequires:	perl-I18N-LangTags >= 0.30
+BuildRequires:	perl-I18N-LangTags >= 0.31
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -60,12 +60,12 @@ zlokalizowanego oprogramowania kodu przetwarzającego tekst.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install \
+%{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm $RPM_BUILD_ROOT%{perl_vendorarch}/auto/Locale-Maketext/.packlist
-rm $RPM_BUILD_ROOT%{perl_vendorlib}/Locale/Maketext.pod
-rm $RPM_BUILD_ROOT%{perl_vendorlib}/Locale/Maketext/*.pod
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorarch}/auto/Locale-Maketext/.packlist
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/Locale/Maketext.pod
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/Locale/Maketext/*.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
