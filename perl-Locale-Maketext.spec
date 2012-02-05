@@ -22,6 +22,7 @@ Requires:	perl-dirs >= 2.1-15
 %if %{with tests}
 BuildRequires:	perl-I18N-LangTags >= 0.31
 %endif
+Requires:	perl-I18N-LangTags >= 0.31
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
