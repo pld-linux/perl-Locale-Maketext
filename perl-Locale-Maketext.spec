@@ -4,7 +4,6 @@
 
 %define		pdir	Locale
 %define		pnam	Maketext
-%include	/usr/lib/rpm/macros.perl
 Summary:	Locale::Maketext - framework for localization
 Summary(pl.UTF-8):	Locale::Maketext - szkielet do lokalizacji programów
 Name:		perl-Locale-Maketext
