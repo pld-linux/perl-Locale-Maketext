@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests	# unit tests
 
 %define		pdir	Locale
 %define		pnam	Maketext
@@ -14,9 +14,10 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Locale/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	fd3428820f4155213a4de59e90564405
-URL:		http://search.cpan.org/dist/Locale-Maketext/
+URL:		https://metacpan.org/dist/Locale-Maketext
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 Requires:	perl-dirs >= 2.1-15
 %if %{with tests}
 BuildRequires:	perl-I18N-LangTags >= 0.31
